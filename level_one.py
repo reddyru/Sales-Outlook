@@ -11,7 +11,6 @@ import matplotlib as mat
 import pandas as pd
 
 salesData = pd.read_csv("csvFiles/sales.csv")
-
 print(salesData.head(6))
 print("Shape of dataset: ",salesData.shape)
 print("Mean of Sales amount: ",salesData['sales_amount'].mean())
