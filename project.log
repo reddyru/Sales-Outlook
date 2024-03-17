@@ -1,0 +1,413 @@
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 661, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Incorrect date value: '01-01-2022' for column 'date' at row 1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 27, in dbConnection
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 374, in execute
+    result = self._cnx.cmd_query(
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 74, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 669, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.DataError: 1292 (22007): Incorrect date value: '01-01-2022' for column 'date' at row 1
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 661, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Cannot add or update a child row: a foreign key constraint fails (`aitraining`.`sales`, CONSTRAINT `sales_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 32, in dbConnection
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 374, in execute
+    result = self._cnx.cmd_query(
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 74, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 669, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`aitraining`.`sales`, CONSTRAINT `sales_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`))
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 661, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Cannot add or update a child row: a foreign key constraint fails (`aitraining`.`sales`, CONSTRAINT `sales_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 33, in dbConnection
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 374, in execute
+    result = self._cnx.cmd_query(
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 74, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 669, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`aitraining`.`sales`, CONSTRAINT `sales_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`))
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 661, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Cannot add or update a child row: a foreign key constraint fails (`aitraining`.`sales`, CONSTRAINT `sales_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 34, in dbConnection
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 374, in execute
+    result = self._cnx.cmd_query(
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 74, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 669, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`aitraining`.`sales`, CONSTRAINT `sales_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`))
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Sales table
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Sales table
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 661, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Cannot add or update a child row: a foreign key constraint fails (`aitraining`.`sales`, CONSTRAINT `sales_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 33, in dbConnection
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 374, in execute
+    result = self._cnx.cmd_query(
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 74, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 669, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`aitraining`.`sales`, CONSTRAINT `sales_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`))
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Sales table
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Sales table
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 53, in dbConnection
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 369, in execute
+    raise ProgrammingError(
+mysql.connector.errors.ProgrammingError: Not all parameters were used in the SQL statement
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 53, in dbConnection
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 369, in execute
+    raise ProgrammingError(
+mysql.connector.errors.ProgrammingError: Not all parameters were used in the SQL statement
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 43, in dbConnection
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 369, in execute
+    raise ProgrammingError(
+mysql.connector.errors.ProgrammingError: Not all parameters were used in the SQL statement
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 42, in dbConnection
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 369, in execute
+    raise ProgrammingError(
+mysql.connector.errors.ProgrammingError: Not all parameters were used in the SQL statement
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 42, in dbConnection
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 369, in execute
+    raise ProgrammingError(
+mysql.connector.errors.ProgrammingError: Not all parameters were used in the SQL statement
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 60, in dbConnection
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 369, in execute
+    raise ProgrammingError(
+mysql.connector.errors.ProgrammingError: Not all parameters were used in the SQL statement
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 44, in dbConnection
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 369, in execute
+    raise ProgrammingError(
+mysql.connector.errors.ProgrammingError: Not all parameters were used in the SQL statement
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Sales table
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 661, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '101' for key 'products.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 44, in dbConnection
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 374, in execute
+    result = self._cnx.cmd_query(
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 74, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 669, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '101' for key 'products.PRIMARY'
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Customers table.
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 661, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '201' for key 'customers.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 54, in dbConnection
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 374, in execute
+    result = self._cnx.cmd_query(
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 74, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 669, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '201' for key 'customers.PRIMARY'
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Regions table.
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Customers table.
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Regions table.
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Products table.
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Sales table.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 661, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '201' for key 'customers.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 37, in dbConnection
+    self.addToCustomersTable(row, mydb)
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 65, in addToCustomersTable
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 374, in execute
+    result = self._cnx.cmd_query(
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 74, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 669, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '201' for key 'customers.PRIMARY'
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 661, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Table 'aitraining.regions' doesn't exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 34, in dbConnection
+    self.addToRegionsTable(row,mydb)
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 62, in addToRegionsTable
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 374, in execute
+    result = self._cnx.cmd_query(
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 74, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 669, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'aitraining.regions' doesn't exist
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 661, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Table 'aitraining.products' doesn't exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 32, in dbConnection
+    self.addToProductsTable(row,mydb)
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 59, in addToProductsTable
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 374, in execute
+    result = self._cnx.cmd_query(
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 74, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 669, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'aitraining.products' doesn't exist
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 661, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Table 'aitraining.products' doesn't exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 30, in dbConnection
+    self.addToSalesTable(row,mydb)
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 53, in addToSalesTable
+    mydb.execute("SELECT 1 FROM products WHERE product_id = %s", (product_id,))
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 374, in execute
+    result = self._cnx.cmd_query(
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 74, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 669, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'aitraining.products' doesn't exist
+INFO:root:Connected to database.
+ERROR:root:Error connecting to MySQL database:
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 661, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '201' for key 'customers.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 37, in dbConnection
+    self.addToCustomersTable(row, mydb)
+  File "/Users/linlinhlaing/Downloads/AI training/Project/Project_Module2/Connector.py", line 65, in addToCustomersTable
+    mydb.execute(query, row)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/cursor_cext.py", line 374, in execute
+    result = self._cnx.cmd_query(
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 74, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/Users/linlinhlaing/venv/lib/python3.9/site-packages/mysql/connector/connection_cext.py", line 669, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '201' for key 'customers.PRIMARY'
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Regions table.
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Products table.
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Sales table.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Customers table.
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Regions table.
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Products table.
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Sales table.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Customers table.
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Regions table.
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Products table.
+INFO:root:Connected to database.
+INFO:root:Data inserted into the Sales table.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
+INFO:root:Connected to database.
