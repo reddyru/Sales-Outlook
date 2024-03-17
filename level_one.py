@@ -19,11 +19,3 @@ print("Median of Sales amount: ",salesData['sales_amount'].median())
 print("Min of Sales amount: ",salesData['sales_amount'].min())
 print("Max of Sales amount: ",salesData['sales_amount'].max())
 print("The number of unique products sold:",salesData['product_id'].nunique())
-
-print("testing==========")
-d = salesData.groupby(['sales_id','product_id']).size()
-print(d)
-column = ['sales_id','product_id',]
-d2 = salesData[column]
-# print(d2.loc[d2['product_id']>101])
-print(salesData[column][salesData['product_id']>104].reset_index(drop=True))
