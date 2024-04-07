@@ -340,6 +340,35 @@ print(result_matrix_multiplication1)
 print("Result of matrix multiplication between product_id and sales_amount:")
 print(result_matrix_multiplication2)
 
+# Convert 'date' column to datetime type
+sdf['date'] = pd.to_datetime(sdf['date'])
+
+# Filter sales data for a specific time period (e.g., year 2023)
+sdf_2023 = sdf[sdf['date'].dt.year == 2023]
+print("after filtering\n",sdf_2023)
+
+# Assuming you have loaded products df from "products.csv"
+electronics_products = pdf[pdf['category'] == 'Electronics']
+electronics_product_ids = electronics_products['product_id'].tolist()
+
+# Select rows where sales amount is greater than 1000 and the product category is 'Electronics'
+electronics_sales = sdf[(sdf['sales_amount'] > 1000) & (sdf['product_id'].isin(electronics_products['product_id']))]
+print("7.2 : \n",electronics_sales)
+
+
+# Calculate total sales amount and average sales amount per product category
+sales_with_products = pd.merge(sdf, pdf, on='product_id', how='inner')
+sales_by_category = sales_with_products.groupby('category').agg(total_sales=('sales_amount', 'sum'),average_sales=('sales_amount', 'mean'))
+print("7.3 : \n",sales_by_category)
+
+
+# Merge sales data with customer data based on customer ID
+merged_df = pd.merge(sdf, cdf, on='customer_id', how='inner')
+
+# Join sales data with product data based on product ID using .join() method
+sales_product_df = sdf.set_index('product_id').join(pdf.set_index('product_id'))
+print("7.4 :\n",sales_product_df)
+
 
 
 
