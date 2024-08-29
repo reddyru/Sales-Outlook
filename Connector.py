@@ -1,7 +1,8 @@
 import csv
 from datetime import datetime
 
-import mysql.connector
+import mysql.connector 
+import mailbox
 import logging
 
 class Connector:
